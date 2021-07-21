@@ -1,0 +1,26 @@
+.container-fluid{
+  padding: 140px ;
+  padding-bottom: 5px;
+  padding-top:20px;
+  box-sizing: border-box;
+  background-color: black;
+  box-shadow: purple;
+  border-width: 120px;
+}
+ h1{
+   font-family: verdana;
+   font-size: 70px;
+   color: orangered;
+ }
+ p{
+   font-size: 30px;
+   font-family: cursive;
+   font-stretch: expanded;
+ }
+.container{
+  background-color:black;
+  padding: 120;
+}
+
+
+

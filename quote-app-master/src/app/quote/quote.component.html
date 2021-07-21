@@ -1,0 +1,15 @@
+<div style="text-align:center">
+  <img src="images/logo.png" alt="">
+  <h1>{{ title }}!</h1>
+</div>
+<app-form (addQuote)="addNewQuote($event)"></app-form>
+<div class="jumbotron" *ngFor="let Quote of quotes; let i=index">
+  <blockquote class="blockquote mb-0">
+    <div>"{{Quote.quote}}"</div>
+    <div>By: {{Quote.author}}</div>
+    <div>Posted by: {{Quote.name}}</div>
+    <div>Posted on: {{Quote.postingDate}}</div>
+    <app-form-details [Quote]='Quote' (complete)='deleteQuote($event,i)'></app-form-details>
+  </blockquote>
+</div>
+
